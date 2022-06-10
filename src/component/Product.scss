@@ -1,0 +1,40 @@
+.container-product{
+    width: 1140px;
+    min-height: 100vh;
+    margin: 0 auto;
+    color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .left{
+        img{
+            width: calc(1140px/3);
+        }
+    }
+    .right{
+        padding: 20px;
+
+        button{
+            font-size: 18px;
+            padding: 4px 16px;
+            margin: 10px 0;
+            color: white;
+            background-color: #333;
+            outline: none;
+            border: none;
+            border-radius: 16px;
+            cursor: pointer;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+            &:active{
+                transform: translateY(2px);
+            }
+        }
+        .soLuong{
+            margin: 20px 0;
+            
+        }
+    }
+}
