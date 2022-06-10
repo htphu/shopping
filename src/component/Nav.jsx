@@ -26,10 +26,10 @@ export default function Nav() {
           <i className="fal fa-shopping-basket" onClick={()=>navigate("/shopping")}></i>
         </div>
         <div className="nav-mid">
-          <span><NavLink to="/">Home</NavLink></span>
-          <span><NavLink to="about">About</NavLink></span>
-          <span><NavLink to="blog">Blog</NavLink></span>
-          <span><NavLink to="contact">Contact</NavLink></span>
+          <span><NavLink to="/shopping">Home</NavLink></span>
+          <span><NavLink to="/shopping/about">About</NavLink></span>
+          <span><NavLink to="/shopping/blog">Blog</NavLink></span>
+          <span><NavLink to="/shopping/contact">Contact</NavLink></span>
         </div>
         <div className="nav-right">
           <i className="fas fa-shopping-cart" onClick={() => setSCart(!sCart)}>

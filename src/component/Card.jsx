@@ -17,7 +17,7 @@ export default function Card(props) {
             $ {props.price}
         </div>
         <div className="card-control">
-            <Link to={"/product/"+props.id}>
+            <Link to={"/shopping/product/"+props.id}>
                 
                 <button  className="card-button"><i class="fas fa-cart-arrow-down"></i> Mua</button>
             </Link>

@@ -17,7 +17,7 @@ export default function Product() {
 
     useEffect(() => {
         const getProducts = () => {
-            fetch('https://fakestoreapi.com/shopping/products/' + id)
+            fetch('https://fakestoreapi.com/products/' + id)
                 .then(res => res.json())
                 .then(json => {
                     setProduct(json)
