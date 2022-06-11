@@ -1,0 +1,16 @@
+.search{
+    display: inline-block;
+    position: relative;
+    input{
+        padding: 8px 16px;
+        border-radius: 20px;
+        border:1px solid rgb(99, 99, 99);
+        outline: none;
+    }
+    .fa-times{
+        position:absolute;
+        right: 8px;
+        line-height: 33px;
+        cursor: pointer;
+    }
+}

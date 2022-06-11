@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import './Home.scss'
+import Search from './Search';
 
 export default function Home() {
 
@@ -79,7 +80,7 @@ export default function Home() {
             <span onClick={()=>{sortProducts('down')}}><i class="fas fa-sort-amount-down"></i>Giá giảm dần</span>
           </div>
         </div>
-      
+        <Search data={data} filter={filter} setFilter={setFilter}/>
         <div className="products">
           {isLoading ? <Loading /> : <ShowProducts />}
         </div>
