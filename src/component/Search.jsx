@@ -20,7 +20,7 @@ export default function Search({filter,data, setFilter}) {
 
   useEffect(() => {
     if(debounceValue.trim() != ''){
-      const product = filter.filter((i)=>{
+      const product = data.filter((i)=>{
         return i.title.toLowerCase().indexOf(debounceValue.toLowerCase()) !==-1
       })
       
