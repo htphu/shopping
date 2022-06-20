@@ -1,17 +1,32 @@
+.mask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.233);
+    z-index: 99;
+}
 .cart{
     position: absolute;
-    top: 60px;
-    right: 0;
+    margin: 0 auto;
+    padding: 0 20px;
     background-color: white;
-    border: 1px solid #EAEAEA;
+    border: 1px solid rgb(161, 161, 161);
     border-radius: 4px;
-    width: 380px;
+    width: 500px;
     animation: fade-in 0.2s;
+    z-index: 100;
 
     @keyframes fade-in {
         0%{
             opacity: 0;
-            transform: translateY(-3rem);
+            transform: translateY(-3rem) /* translateX(3rem) */;
         }
         100%{
             opacity: 1;
@@ -19,8 +34,15 @@
     }
 
     &-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 0 20px;
         border-bottom: 1px solid #EAEAEA;
+
+        .fa-times{
+            cursor: pointer;
+        }
     }
     &-item{
         display: flex;

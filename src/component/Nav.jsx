@@ -35,7 +35,7 @@ export default function Nav() {
           <i className="fas fa-shopping-cart" onClick={() => setSCart(!sCart)}>
             <div className="count"><Count/></div>
           </i>
-          {sCart && <Cart />}
+          {sCart && <Cart toggleCart={()=>setSCart(!sCart)}/>}
         </div>
       </div>
     </div>

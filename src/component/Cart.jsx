@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { giam, tang } from './redux/action';
 import './Cart.scss';
 
-export default function Cart() {
+export default function Cart({toggleCart}) {
     const products = useSelector(state => state.handleCart);
     const dispatch = useDispatch();
     const CartItem = (props) => {
@@ -47,14 +47,17 @@ export default function Cart() {
         )
     }
     return (
-        <div className="cart">
-            <div className="cart-title">
-                <h3>Giỏ hàng</h3>
-            </div>
-            {showProductInCart()}
-            <div className="cart-total">
-                <div className="cart-price">Tổng: $ <Total /> </div>
-                <button>Thanh toán</button>
+        <div className="mask">
+            <div className="cart">
+                <div className="cart-title">
+                    <h3>Giỏ hàng</h3>
+                    <i className="fas fa-times" onClick={toggleCart}></i>
+                </div>
+                {showProductInCart()}
+                <div className="cart-total">
+                    <div className="cart-price">Tổng: $ <Total /> </div>
+                    <button>Thanh toán</button>
+                </div>
             </div>
         </div>
     )

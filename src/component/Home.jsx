@@ -19,10 +19,10 @@ export default function Home() {
           setLoading(false);
         })
         .catch(error => console.log(console.log(error)))
+      
 
     }
     getProducts();
-
   }, [])
 
   const Loading = () => {
