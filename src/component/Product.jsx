@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addCart } from './redux/action';
 import { Store } from 'react-notifications-component';
 import 'animate.css';
+import Loading from './Loading';
 
 
 export default function Product() {
@@ -28,16 +29,6 @@ export default function Product() {
 
         getProducts();
     }, []);
-
-    const Loading = () => {
-        return (
-            <>
-                <div className="loading">
-                    Loading...
-                </div>
-            </>
-        )
-    }
 
     const handleAddCart = () =>{
         dispatch(addCart(product));
@@ -91,7 +82,7 @@ export default function Product() {
 
     return (
         <div className="container-product">
-            {isLoading ? <Loading /> : <ShowProducts />}
+            {isLoading ? <Loading/> : <ShowProducts />}
         </div>
     )
 }
