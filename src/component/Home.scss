@@ -3,22 +3,20 @@
     min-height: 100vh;
     margin: 0 auto;
     color: #333;
-    padding-bottom: 20px;
 
 
     .filter{
         width: 100%;
-        padding: 20px 0;
+        padding: 10px 0;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
         span{
-            padding: 8px 16px;
-            transition: 0.25s linear;
+            margin: 8px 16px;
             &:hover{
-                font-weight: bold;
+                border-bottom: 2px solid rgb(100, 100, 100);
             }
         }
     }
@@ -29,5 +27,6 @@
         justify-items: center;
         align-items: center;
         gap: 10px 10px;
+        padding: 10px 0;
     }
 }

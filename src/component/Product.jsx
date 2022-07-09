@@ -1,7 +1,7 @@
 import './Product.scss'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addCart } from './redux/action';
 import { Store } from 'react-notifications-component';
 import 'animate.css';
@@ -14,7 +14,6 @@ export default function Product() {
     const { id } = useParams();
 
     const dispatch = useDispatch();
-    const products = useSelector(state => state.handleCart);
 
     useEffect(() => {
         const getProducts = () => {
