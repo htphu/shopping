@@ -1,7 +1,12 @@
 .search{
-    display: inline-block;
-    position: relative;
+    display: block;
+    
+    &-container{
+        position: relative;
+        display: inline;
+    }
     input{
+        
         padding: 8px 16px;
         border-radius: 20px;
         border:1px solid rgb(99, 99, 99);
@@ -12,5 +17,11 @@
         right: 8px;
         line-height: 33px;
         cursor: pointer;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .search{
+        display: flex;
+        justify-content: center;
     }
 }

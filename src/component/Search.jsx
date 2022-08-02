@@ -33,10 +33,12 @@ export default function Search({filter,data, setFilter}) {
   
   return (
     <div className="search">
+      <div className="search-container">
         <input type="text" value={searchValue} placeholder="Tìm kiếm" onChange={(e)=>{
           setSearchValue(e.target.value)
         }}/>
         {searchValue && <i className="fas fa-times" onClick={()=>setSearchValue('')}></i>}
+      </div>
     </div>
   )
 }

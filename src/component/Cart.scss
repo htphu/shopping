@@ -14,13 +14,13 @@
 }
 .cart{
     color: rgb(100, 100, 100);
+    width: 500px;
     position: absolute;
     margin: 0 auto;
     padding: 0 20px;
     background-color: white;
     border: 1px solid rgb(161, 161, 161);
     border-radius: 4px;
-    width: 500px;
     animation: fade-in 0.2s;
     z-index: 100;
 
@@ -80,5 +80,10 @@
             transform: translateY(2px);
             }
         }
+    }
+}
+@media screen and (max-width: 1024px){
+    .cart{
+        width: 80%;
     }
 }
